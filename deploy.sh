@@ -1,5 +1,5 @@
 docker build -t yonjuro/multi-client:latest -t yonjuro/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t yonjuro/multi-server:latest -t yonjuro/multi-server:$SHA -f -/server/Dockerfile ./server
+docker build -t yonjuro/multi-server:latest -t yonjuro/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t yonjuro/multi-worker:latest -t yonjuro/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push yonjuro/multi-client:latest
